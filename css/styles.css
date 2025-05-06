@@ -1,0 +1,79 @@
+/* Reset default styles */
+* {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0px auto;
+  line-height: 1.8;
+}
+
+/* Container styling for layout */
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  font-family: Arial, sans-serif;
+}
+
+h1,
+h3 {
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+}
+
+#vis svg {
+  margin: 2rem 0;
+  border: 1px solid #ccc; /*otherwise you can't see this part*/
+  background-color: gray;
+}
+
+.x-axis path,
+.y-axis path,
+.x-axis line,
+.y-axis line {
+  stroke: #333;
+  shape-rendering: crispEdges;
+}
+
+.x-axis text,
+.y-axis text {
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+}
+
+.axis-label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+button {
+  padding: 8px 16px;
+  margin-right: 10px;
+  background-color: paleturquoise;
+  border: 1px solid black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+#tooltip {
+  position: absolute; /* So we can move it with the cursor */
+  padding: 10px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  pointer-events: none; /* Prevent tooltip from interfering with mouse events */
+  font-size: 12px;
+}
+
+.labels {
+  paint-order: stroke;
+  stroke: #ffffffaa;
+  stroke-width: 3px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  font-family: Arial, Helvetica, sans-serif;
+}
