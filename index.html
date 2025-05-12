@@ -12,18 +12,20 @@
     <h1>No Walk in the Park: Visualizing Walkability in the US</h1>
     <p>Candace Sun, Calvin Pham, Riva Zhang, Nicole Zhang</p>
 
-    <div class='tableauPlaceholder' id='viz1746559207962' style='position: relative'><noscript><a href='#'><img
-                    alt='Sheet 2 '
-                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;dc&#47;dcbroken__&#47;Sheet2&#47;1_rss.png'
+
+
+    <div class='tableauPlaceholder' id='viz1747075765734' style='position: relative'><noscript><a href='#'><img
+                    alt='Walkability Metrics and Metro Station Locations in DC '
+                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;fi&#47;final471&#47;Sheet2&#47;1_rss.png'
                     style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
             <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
             <param name='embed_code_version' value='3' />
             <param name='site_root' value='' />
-            <param name='name' value='dcbroken__&#47;Sheet2' />
+            <param name='name' value='final471&#47;Sheet2' />
             <param name='tabs' value='no' />
             <param name='toolbar' value='yes' />
             <param name='static_image'
-                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;dc&#47;dcbroken__&#47;Sheet2&#47;1.png' />
+                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;fi&#47;final471&#47;Sheet2&#47;1.png' />
             <param name='animate_transition' value='yes' />
             <param name='display_static_image' value='yes' />
             <param name='display_spinner' value='yes' />
@@ -34,7 +36,8 @@
 
     <div class="container" style="clear: both; margin-top: 30px;">
         <h1 style="text-align: center;">Walkability Across the US</h1>
-        <p style="text-align: center;">Click on a county to zoom in. Double click to zoom out. Shift + Drag to pan around.</p>
+        <p style="text-align: center;">Click on a county to zoom in. Double click to zoom out. Shift + Drag to pan
+            around.</p>
         <div id="density"></div>
         <div id="density_legend"></div>
         <div id="proximity"></div>
@@ -49,13 +52,15 @@
     <div id="tooltip" style="display: none;"></div>
 
     <script type='text/javascript'>
-        var divElement = document.getElementById('viz1746559207962');
-        var vizElement = divElement.getElementsByTagName('object')[0]; 
-        vizElement.style.width = '100%'; 
-        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; 
-        var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
-        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        var divElement = document.getElementById('viz1747075765734');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width = '100%';
+        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);                
     </script>
+
 
     <!-- Load D3.js -->
     <script src="https://unpkg.com/topojson@3"></script>
