@@ -10,11 +10,53 @@
 
 <body>
     <h1>No Walk in the Park: Visualizing Walkability in the US</h1>
-    <p>Candace Sun, Calvin Pham, Riva Zhang, Nicole Zhang</p>
+    <p>Candace Sun, Calvin Pham, Riva Zhang, Nicole Zhang</p> </br> </br>
+    <div class="intro">
+        <h3>Walkability is just what it sounds: a walkable place is a place that is easy to walk around.</h3>
+        <p>[Explanation and more intro text here]</p>
+        <p>The main variables that contribute to “walkability” of a census block group (CBG) are intersection 
+            density, proximity to transit stops, diversity of land uses – employment mix and employment and household mix. </br>
+            These four variables are quantified based on the CBG’s score for each variable. For simplicity and interactivity, we 
+            aggregated the CBGs by county. Multiple CBGs belong in each county, so we averaged the corresponding values.
+        </p>
+    </div>
 
+    <div class="container" style="clear: both; margin-top: 30px;">
+        <h1 style="text-align: center;">Walkability Across the US</h1>
+        <p style="text-align: center;">Click on a county to zoom in. Double click to zoom out. Shift + Drag to pan
+            around.</p>
+        <div id="density"></div> <!--Definitions for each variable-->
+        <div id="density_legend"></div>
+        <div id="proximity"></div>
+        <div id="proximity_legend"></div>
+        <div id="employment"></div>
+        <div id="employment_legend"></div>
+        <div id="household"></div>
+        <div id="household_legend"></div>
+        <div id="walkability"></div> <!--Have text and equation before this map?-->
+        <div id="walkability_legend"></div>
+    </div>
+    <div id="tooltip" style="display: none;"></div>
 
-
-    <div class='tableauPlaceholder' id='viz1747075765734' style='position: relative'><noscript><a href='#'><img
+    <div class="dcintro">
+        <h3>Let's Dive into DC!</h3>
+        <p>Now that you know what walkability is, lets go a little deeper. The Distric of Columbia provides access to hundreds of 
+            datasets found <a href="https://catalog.data.gov/organization/district-of-columbia">here.</a> We composed a visualization 
+            using multiple datasets to show how complex walkability can be. Before we get started, we have to introduce some variables first.</p> </br>
+        
+        <p><strong>Pedestrian Friendliness Index (PFI):</strong> DC scores each Census block showing how walkable they are, relative to other Census 
+            blocks. An area deemed ‘most walkable’ has a connected street grid with sidewalks, buildings set close to the street, and intersections 
+            and blocks that are manageable for pedestrians. It is essentially the same as walkability</br>
+            <strong>Block Density:</strong> Calculated by dividing total blocks by the total area of each neighborhood. A neighborhood that is more 
+            dense means that there are more buildings and people in the neighborhood. </br>
+            <strong>Average Metrobus Ridership:</strong> DC scores every quarter mile in grid format by average daily metrobus ridership. Areas 
+            with high average ridership are indicative of the jobs, population and activity generators within and near those grid cells.</br>
+            <strong>Attractions Accessible via Walk:</strong> This measures how many destinations in a neighborhood are accessible by at least 20 
+            minutes of walking. </br>
+            <strong>Four Way Intersection Score:</strong> This measures how many four way intersections there are compared to dead ends and other intersections.</br>
+        </p>
+    </div>
+    <div class='tableauPlaceholder' id='viz1747446229222' style='position: relative'><noscript><a href='#'><img
                     alt='Walkability Metrics and Metro Station Locations in DC '
                     src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;fi&#47;final471&#47;Sheet2&#47;1_rss.png'
                     style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
@@ -34,31 +76,12 @@
             <param name='language' value='en-US' />
         </object></div>
 
-    <div class="container" style="clear: both; margin-top: 30px;">
-        <h1 style="text-align: center;">Walkability Across the US</h1>
-        <p style="text-align: center;">Click on a county to zoom in. Double click to zoom out. Shift + Drag to pan
-            around.</p>
-        <div id="density"></div>
-        <div id="density_legend"></div>
-        <div id="proximity"></div>
-        <div id="proximity_legend"></div>
-        <div id="employment"></div>
-        <div id="employment_legend"></div>
-        <div id="household"></div>
-        <div id="household_legend"></div>
-        <div id="walkability"></div>
-        <div id="walkability_legend"></div>
-    </div>
-    <div id="tooltip" style="display: none;"></div>
-
-    <script type='text/javascript'>
-        var divElement = document.getElementById('viz1747075765734');
-        var vizElement = divElement.getElementsByTagName('object')[0];
-        vizElement.style.width = '100%';
-        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
-        var scriptElement = document.createElement('script');
-        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-        vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+    <script type='text/javascript'>                    
+        var divElement = document.getElementById('viz1747446229222'); 
+        var vizElement = divElement.getElementsByTagName('object')[0]; 
+        vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; 
+        var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);              
     </script>
 
 
