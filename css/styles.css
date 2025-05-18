@@ -12,15 +12,37 @@ h3 {
   line-height: 1.4;
 }
 
+.walk-var {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.density {
+  color: #572d92;
+}
+
+.proximity {
+  color: #d74c05;
+}
+
+.e-mix {
+  color: #1d6bb0;
+}
+
+.eh-mix {
+  color: #107937;
+}
+
 #walkability_legend,
 #density_legend,
 #proximity_legend,
 #employment_legend,
 #household_legend {
-margin-top: 20px;
+  margin-top: 20px;
 }
 
-.line1, .line2 {
+.line1,
+.line2 {
   display: flex;
   justify-content: center;
 }
