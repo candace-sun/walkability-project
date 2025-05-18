@@ -22,19 +22,33 @@
     </div>
 
     <div class="container" style="clear: both; margin-top: 30px;">
-        <h1 style="text-align: center;">Walkability Across the US</h1>
-        <p style="text-align: center;">Click on a county to zoom in. Double click to zoom out. Shift + Drag to pan
-            around.</p>
-        <div id="density"></div> <!--Definitions for each variable-->
-        <div id="density_legend"></div>
-        <div id="proximity"></div>
-        <div id="proximity_legend"></div>
-        <div id="employment"></div>
-        <div id="employment_legend"></div>
-        <div id="household"></div>
-        <div id="household_legend"></div>
-        <div id="walkability"></div> <!--Have text and equation before this map?-->
+        <div id="map-grid">
+            <div class="line1">
+                <div class="map-panel">
+                    <div id="density_legend"></div>
+                    <div id="density"></div>
+                </div>
+                <div class="map-panel">
+                    <div id="proximity_legend"></div>
+                    <div id="proximity"></div>
+                </div>
+            </div>
+
+            <div class="line2">
+                <div class="map-panel">
+                    <div id="employment_legend"></div>
+                    <div id="employment"></div>
+                </div>
+                <div class="map-panel">
+                    <div id="household_legend"></div>
+                    <div id="household"></div>
+                </div>
+            </div>
+        </div>
+
+        <p style="text-align: center;">Click on a county to zoom in. Double click to zoom out. Shift + Drag to pan around.</p>
         <div id="walkability_legend"></div>
+        <div id="walkability"></div>
     </div>
     <div id="tooltip" style="display: none;"></div>
 
