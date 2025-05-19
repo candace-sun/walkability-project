@@ -6,7 +6,7 @@ We planned the structure of our visualization and organized who would be working
 # Division of Work
 We divided work by splitting into pairs and working on seperate visualizations. Candace and Calvin worked on the Tableau visualization of DC while Nicole and Riva worked on the d3 visualizations of the United States. Candace also worked on the street view as well as additional formatting for the page. Calvin worked on the write-up. 
 
-#Acknowledgements
+# Acknowledgements
 We used data from the United State Enviromental Protection Agency. Specifically their walkability index found here: 
 https://catalog.data.gov/dataset/walkability-index8/resource/356986ec-b9ab-4fdf-8838-7262a08502e3 
 
