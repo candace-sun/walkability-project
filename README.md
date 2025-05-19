@@ -9,6 +9,7 @@ We divided work by splitting into pairs and working on seperate visualizations. 
 #Acknowledgements
 We used data from the United State Enviromental Protection Agency. Specifically their walkability index found here: https://catalog.data.gov/dataset/walkability-index8/resource/356986ec-b9ab-4fdf-8838-7262a08502e3 
 We also used various datasets from the District of Columbia's publicly available data. These datasets are found below:
+
 Pedestrian friendliness: https://catalog.data.gov/dataset/pedestrian-friendliness-index-census-blocks
 Metrobus ridership: https://catalog.data.gov/dataset/metrobus-ridership-stop-grid 
 Metro station location https://catalog.data.gov/dataset/metro-stations-regional 
